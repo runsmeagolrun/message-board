@@ -1,26 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, Fragment } from "react";
+import "materialize-css/dist/css/materialize.min.css";
+import M from "materialize-css/dist/js/materialize.min.js";
+import { Provider } from "react-redux";
+import store from "./store";
 
-function App() {
+import "./App.css";
+import AppNavbar from "./components/layout/AppNavbar";
+import Messages from "./components/message/Messages";
+import AddBtn from "./components/layout/AddBtn";
+import AddMessageModal from "./components/message/AddMessageModal";
+import EditMessageModal from "./components/message/EditMessageModal";
+import CommentModal from "./components/message/CommentModal";
+
+const App = () => {
+  useEffect(() => {
+    // Init Materialize CSS
+    M.AutoInit();
+  });
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>
+      <Fragment>
+        <AppNavbar />
+        <AddBtn />
+        <AddMessageModal />
+        <EditMessageModal />
+        <CommentModal />
+        <Messages />
+      </Fragment>
+    </Provider>
   );
-}
+};
 
 export default App;

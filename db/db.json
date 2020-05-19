@@ -1,0 +1,57 @@
+{
+  "messages": [
+    {
+      "id": 1,
+      "message": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "parentId": null,
+      "author": 1
+    },
+    {
+      "id": 2,
+      "message": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "parentId": null,
+      "author": 2
+    },
+    {
+      "id": 3,
+      "message": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      "parentId": null,
+      "author": 3
+    },
+    {
+      "id": 4,
+      "message": "Hi Brick",
+      "parentId": 3,
+      "author": 2
+    },
+    {
+      "id": 5,
+      "message": "Hi Veronica",
+      "parentId": 1,
+      "author": 2
+    },
+    {
+      "id": 6,
+      "message": "Hi Ron",
+      "parentId": 2,
+      "author": 1
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Veronica Corningstone",
+      "imageUrl": "https://image.flaticon.com/icons/svg/145/145852.svg"
+    },
+    {
+      "id": 2,
+      "name": "Ron Burgundy",
+      "imageUrl": "https://image.flaticon.com/icons/svg/145/145843.svg"
+    },
+    {
+      "id": 3,
+      "name": "Brick Tamland",
+      "imageUrl": "https://image.flaticon.com/icons/svg/236/236831.svg"
+    }
+  ]
+}
